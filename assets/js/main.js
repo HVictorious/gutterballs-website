@@ -62,15 +62,15 @@
 					}
 
 				// Video check.
-					//var video = $banner.data('video');
+					var video = $banner.data('video');
 
 					if (video)
 						$window.on('load.banner', function() {
 
-							 Disable banner load event (so it doesn't fire again).
+							 //Disable banner load event (so it doesn't fire again).
 								$window.off('load.banner');
 
-							 Append video if supported.
+							 //Append video if supported.
 								if (!skel.vars.mobile
 								&&	!skel.breakpoint('large').active
 								&&	skel.vars.IEVersion > 9)
